@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+}
+
+body {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif; /* Adicionando a fonte Roboto para todo o site */
+  font-size: 20px; /* Alterando o tamanho da fonte para o corpo do documento */
+  color: white; /* Cor padrão para o texto no corpo do documento */
+}
+
+img {
+  display: block; /* Para garantir que a margem automática funcione corretamente */
+  margin: 0 auto; /* Define margens automáticas para centralizar horizontalmente */
+}
+
+header {
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilização da navegação */
+nav {
+  background-color: #333; /* Cor de fundo */
+  border-radius: 20px;
+  padding: 15px 0; /* Espaçamento interno para cima e para baixo */
+}
+
+nav ul {
+  list-style: none; /* Remover marcadores de lista */
+  text-align: center; /* Alinhar os itens da lista ao centro */
+}
+
+nav ul li {
+  display: inline; /* Exibir os itens da lista em linha */
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remover margem à direita do último item */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remover sublinhado dos links */
+  color: #fff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno para cima e para baixo */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Transição suave da cor de fundo */
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+  border-radius: 20px;
+}
+
+/* Estilização da navegação responsiva */
+@media only screen and (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  nav ul li {
+      display: block;
+      margin: 0;
+      padding: 10px 0;
+  }
+}
+
+p {
+  text-align: center;
+  margin: 5px 30px; /* Define um espaçamento de 5 pixels acima e abaixo do parágrafo e 30px espaçamento nas laterais */
+}
+
+h2 {
+  text-align: center;
+  margin: 0 30px; /* Define nenhum espaçamento acima e abaixo do parágrafo e 30px de espaçamento nas laterais */
+}
+
+.proj h2 {
+  text-align: center;
+  margin: 0 30px; /* Define nenhum espaçamento acima e abaixo do parágrafo e 30px de espaçamento nas laterais */
+}
+
+#projetos h3 {
+  text-align: center;
+  margin: 0 30px; /* Define nenhum espaçamento acima e abaixo do parágrafo e 30px de espaçamento nas laterais */
+}
+
+#servicos li{
+  text-align: left;
+  margin: 0 50px; /* Define nenhum espaçamento acima e abaixo do parágrafo e 30px de espaçamento nas laterais */
+}
+
+#servicos {
+  padding-top: 30px; /* Aumentando o espaçamento interno para cima */
+  padding-bottom: 70px; /* Aumentando o espaçamento interno para baixo */    
+}
+
+#home h2 {
+  padding-top: 30px; /* Aumentando o espaçamento interno para cima */
+  padding-bottom: 20px; /* Aumentando o espaçamento interno para baixo */    
+}
+
+#sobre {
+  padding-top: 30px; /* Aumentando o espaçamento interno para cima */
+  padding-bottom: 70px; /* Aumentando o espaçamento interno para baixo */    
+}
+
+#projetos {
+  padding-top: 5px; /* Aumentando o espaçamento interno para cima */
+  padding-bottom: 30px; /* Aumentando o espaçamento interno para baixo */    
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 30px; /* Adiciona espaço interno à esquerda */
+  padding-right: 30px; /* Adiciona espaço interno à direita */
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.informação {
+  margin: 30px 10px; /* Define nenhum espaçamento acima e abaixo do parágrafo e 30px de espaçamento nas laterais */
+  font-size: 20px; /* Alterando o tamanho da fonte para o corpo do documento */
+}
